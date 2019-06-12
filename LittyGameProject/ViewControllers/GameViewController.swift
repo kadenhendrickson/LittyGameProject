@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let goldfish = 6
+        
         
         // Do any additional setup after loading the view.
     }

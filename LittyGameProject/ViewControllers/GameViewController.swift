@@ -10,22 +10,55 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var buttonOneImageView: UIButton!
+    @IBOutlet weak var queenImageView: UIButton!
+    @IBOutlet weak var buttonThreeImageView: UIButton!
+    
+    
+    var slotOne: CGPoint = .zero
+    var slotTwo: CGPoint = .zero
+    var slotThree: CGPoint = .zero
+    var numberOfShuffles = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Do any additional setup after loading the view.
+        slotOne = buttonOneImageView.frame.origin
+        slotTwo = queenImageView.frame.origin
+        slotThree = buttonThreeImageView.frame.origin
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func moveCardsButtonTapped(_ sender: Any) {
+        numberOfShuffles = 10
+        animateCards(animationSpeed: 0.5)
+        print("I ran")
+        
+        
+        
     }
-    */
+    
+    func animateCards(animationSpeed: TimeInterval) {
+        var slots = [slotOne, slotTwo, slotThree].shuffled()
+        
+        UIView.animate(withDuration: animationSpeed,
+                       delay: 0,
+                       options: [], animations: {
+                        self.buttonOneImageView.frame.origin = slots[0];
+                        self.queenImageView.frame.origin = slots[1];
+                        self.buttonThreeImageView.frame.origin = slots[2];
+                        
+        }, completion: { (_) in
+            if self.numberOfShuffles >= 0 {
+                self.animateCards(animationSpeed: animationSpeed)
+                print("animated \(self.numberOfShuffles) times")
+            }
+            self.numberOfShuffles -= 1
+            
+        })
+    }
+    
+    
 
 }

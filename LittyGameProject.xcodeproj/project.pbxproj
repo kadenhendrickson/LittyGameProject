@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766422B179970080AEB1 /* AppDelegate.swift */; };
-		DC82766722B179970080AEB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766622B179970080AEB1 /* ViewController.swift */; };
 		DC82766A22B179970080AEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766822B179970080AEB1 /* Main.storyboard */; };
 		DC82766C22B179980080AEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC82766B22B179980080AEB1 /* Assets.xcassets */; };
 		DC82766F22B179980080AEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		DC82766122B179970080AEB1 /* LittyGameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittyGameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC82766422B179970080AEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC82766622B179970080AEB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC82766922B179970080AEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC82766B22B179980080AEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC82766E22B179980080AEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		DC82766322B179970080AEB1 /* LittyGameProject */ = {
 			isa = PBXGroup;
 			children = (
-				DC82766422B179970080AEB1 /* AppDelegate.swift */,
-				DC82766622B179970080AEB1 /* ViewController.swift */,
+				DC82767622B1A68C0080AEB1 /* Resources */,
 				DC82766822B179970080AEB1 /* Main.storyboard */,
+			);
+			path = LittyGameProject;
+			sourceTree = "<group>";
+		};
+		DC82767622B1A68C0080AEB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC82766422B179970080AEB1 /* AppDelegate.swift */,
 				DC82766B22B179980080AEB1 /* Assets.xcassets */,
 				DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */,
 				DC82767022B179980080AEB1 /* Info.plist */,
 			);
-			path = LittyGameProject;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC82766722B179970080AEB1 /* ViewController.swift in Sources */,
 				DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = LittyGameProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LittyGameProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = LittyGameProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LittyGameProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

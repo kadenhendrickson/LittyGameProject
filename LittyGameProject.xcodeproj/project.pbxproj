@@ -13,7 +13,6 @@
 		16C7B32622B2B2EF00E65CA7 /* GreenMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32522B2B2EF00E65CA7 /* GreenMonteButton.swift */; };
 		16C7B32822B2B30C00E65CA7 /* YellowMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */; };
 		16C7B32A22B2B35F00E65CA7 /* GrayMonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */; };
-		16C7B32D22B2B5F600E65CA7 /* SettingsStackViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */; };
 		16C7B33122B2B96600E65CA7 /* SettingsLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */; };
 		DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766422B179970080AEB1 /* AppDelegate.swift */; };
 		DC82766A22B179970080AEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766822B179970080AEB1 /* Main.storyboard */; };
@@ -29,7 +28,6 @@
 		16C7B32522B2B2EF00E65CA7 /* GreenMonteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMonteButton.swift; sourceTree = "<group>"; };
 		16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowMonteButton.swift; sourceTree = "<group>"; };
 		16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayMonteButtons.swift; sourceTree = "<group>"; };
-		16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStackViewColor.swift; sourceTree = "<group>"; };
 		16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabels.swift; sourceTree = "<group>"; };
 		DC82766122B179970080AEB1 /* LittyGameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittyGameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC82766422B179970080AEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 		16C7B32E22B2B92F00E65CA7 /* StackView */ = {
 			isa = PBXGroup;
 			children = (
-				16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */,
 			);
 			path = StackView;
 			sourceTree = "<group>";
@@ -215,7 +212,6 @@
 				DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */,
 				16C7B31922B2A65300E65CA7 /* StyleGuide.swift in Sources */,
 				DC82767A22B1A8A90080AEB1 /* SettingsViewController.swift in Sources */,
-				16C7B32D22B2B5F600E65CA7 /* SettingsStackViewColor.swift in Sources */,
 				16C7B32A22B2B35F00E65CA7 /* GrayMonteButtons.swift in Sources */,
 				16C7B32622B2B2EF00E65CA7 /* GreenMonteButton.swift in Sources */,
 				16C7B33122B2B96600E65CA7 /* SettingsLabels.swift in Sources */,

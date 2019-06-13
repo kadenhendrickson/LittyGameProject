@@ -21,27 +21,32 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
                                 <rect key="frame" x="30" y="344" width="354" height="218"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
-                                <rect key="frame" x="300" y="414" width="74" height="108"/>
-                                <state key="normal" title="Button" image="queenOfHearts"/>
-                                <connections>
-                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
-                                <rect key="frame" x="170" y="414" width="74" height="108"/>
-                                <state key="normal" title="Button" image="queenOfSpades"/>
-                                <connections>
-                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
-                                <rect key="frame" x="40" y="414" width="74" height="108"/>
-                                <state key="normal" title="Button" image="queenOfHearts"/>
-                                <connections>
-                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-z0-GfL">
+                                <rect key="frame" x="40" y="414" width="334" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="108"/>
+                                        <state key="normal" title="Button" image="queenOfHearts"/>
+                                        <connections>
+                                            <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
+                                        <rect key="frame" x="130" y="0.0" width="74" height="108"/>
+                                        <state key="normal" title="Button" image="queenOfSpades"/>
+                                        <connections>
+                                            <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
+                                        <rect key="frame" x="260" y="0.0" width="74" height="108"/>
+                                        <state key="normal" title="Button" image="queenOfHearts"/>
+                                        <connections>
+                                            <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-01-vcJ" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                 <rect key="frame" x="80" y="602" width="254" height="80"/>
                                 <color key="backgroundColor" red="0.51882286269430056" green="0.086804847477133323" blue="0.036534009476275789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,32 +84,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40594640544041449" green="0.067919358112228406" blue="0.028585574942095009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qJK-dN-APi" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="370" id="0BY-hQ-kqh"/>
+                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="xxH-z0-GfL" secondAttribute="trailing" constant="40" id="0u6-tZ-pal"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="DkT-01-vcJ" secondAttribute="trailing" constant="80" id="3Pj-YZ-T4f"/>
-                            <constraint firstItem="OzQ-zy-2fM" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="300" id="7qw-1y-flQ"/>
-                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="qJK-dN-APi" secondAttribute="bottom" constant="340" id="8xH-ei-aPu"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="9Xc-Dd-9fJ"/>
-                            <constraint firstItem="qJK-dN-APi" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="170" id="Bth-nk-8uW"/>
-                            <constraint firstItem="yZ0-kG-Pur" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="40" id="ETt-mw-bYQ"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="ZTk-fM-Akp" secondAttribute="trailing" constant="30" id="Ebh-vt-jF5"/>
                             <constraint firstItem="hXS-Wo-qvB" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="25" id="FNx-LU-N08"/>
-                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="yZ0-kG-Pur" secondAttribute="bottom" constant="340" id="HyT-zn-cc1"/>
-                            <constraint firstItem="OzQ-zy-2fM" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="370" id="Ji9-Np-iYx"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="centerY" secondItem="dIY-Ps-pk8" secondAttribute="centerY" id="KY9-2s-JWw"/>
                             <constraint firstItem="DkT-01-vcJ" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="MVj-mu-W1a"/>
-                            <constraint firstItem="OzQ-zy-2fM" firstAttribute="leading" secondItem="qJK-dN-APi" secondAttribute="trailing" constant="56" id="SM4-gn-Mj9"/>
+                            <constraint firstItem="xxH-z0-GfL" firstAttribute="top" secondItem="ZTk-fM-Akp" secondAttribute="top" constant="70" id="RX0-kJ-5qM"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="DkT-01-vcJ" secondAttribute="bottom" constant="180" id="U7S-4p-eQ1"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="300" id="VNp-BX-1w0"/>
-                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="OzQ-zy-2fM" secondAttribute="bottom" constant="340" id="Xb8-MR-MZy"/>
+                            <constraint firstItem="xxH-z0-GfL" firstAttribute="leading" secondItem="ZTk-fM-Akp" secondAttribute="leading" constant="10" id="Y3N-QF-9sp"/>
                             <constraint firstItem="xgW-YT-cKK" firstAttribute="top" secondItem="kCX-fZ-Ce5" secondAttribute="bottom" constant="25" id="aDq-17-Qzt"/>
-                            <constraint firstItem="qJK-dN-APi" firstAttribute="leading" secondItem="yZ0-kG-Pur" secondAttribute="trailing" constant="56" id="gZg-V0-69l"/>
                             <constraint firstItem="xgW-YT-cKK" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="idA-Tw-0CS"/>
                             <constraint firstItem="DkT-01-vcJ" firstAttribute="top" secondItem="ZTk-fM-Akp" secondAttribute="bottom" constant="40" id="lfY-H9-rfA"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="200" id="ltu-ve-ozY"/>
-                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="OzQ-zy-2fM" secondAttribute="trailing" constant="40" id="n7x-R5-SO2"/>
-                            <constraint firstItem="yZ0-kG-Pur" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="370" id="sYg-P5-keY"/>
                             <constraint firstItem="hXS-Wo-qvB" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="300" id="tut-Zf-1aL"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="hXS-Wo-qvB" secondAttribute="trailing" constant="30" id="vvP-uu-uNP"/>
+                            <constraint firstItem="ZTk-fM-Akp" firstAttribute="bottom" secondItem="xxH-z0-GfL" secondAttribute="bottom" constant="40" id="vze-8W-sqO"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="30" id="zc3-tW-WEr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dIY-Ps-pk8"/>
@@ -265,7 +262,7 @@
     </scenes>
     <resources>
         <image name="oakTable" width="169" height="74.5"/>
-        <image name="queenOfHearts" width="420" height="610.5"/>
+        <image name="queenOfHearts" width="90" height="126"/>
         <image name="queenOfSpades" width="85" height="119"/>
     </resources>
 </document>

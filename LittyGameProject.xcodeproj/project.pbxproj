@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C7B31922B2A65300E65CA7 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B31822B2A65300E65CA7 /* StyleGuide.swift */; };
+		16C7B31C22B2A75100E65CA7 /* MonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */; };
 		DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766422B179970080AEB1 /* AppDelegate.swift */; };
 		DC82766A22B179970080AEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766822B179970080AEB1 /* Main.storyboard */; };
 		DC82766C22B179980080AEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC82766B22B179980080AEB1 /* Assets.xcassets */; };
 		DC82766F22B179980080AEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */; };
-		DC82767822B1A89D0080AEB1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82767722B1A89D0080AEB1 /* GameViewController.swift */; };
 		DC82767A22B1A8A90080AEB1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82767922B1A8A90080AEB1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C7B31822B2A65300E65CA7 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteButtons.swift; sourceTree = "<group>"; };
 		DC82766122B179970080AEB1 /* LittyGameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittyGameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC82766422B179970080AEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC82766922B179970080AEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,15 +40,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16C7B31722B1A72800E65CA7 /* Resource */ = {
+		16C7B31A22B2A66200E65CA7 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				DC82766422B179970080AEB1 /* AppDelegate.swift */,
-				DC82766B22B179980080AEB1 /* Assets.xcassets */,
-				DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */,
-				DC82767022B179980080AEB1 /* Info.plist */,
+				16C7B31822B2A65300E65CA7 /* StyleGuide.swift */,
+				16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */,
 			);
-			path = Resource;
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		DC82765822B179960080AEB1 = {
@@ -67,10 +68,10 @@
 		DC82766322B179970080AEB1 /* LittyGameProject */ = {
 			isa = PBXGroup;
 			children = (
-
 				DC82767622B1A68C0080AEB1 /* Resources */,
 				DC82766822B179970080AEB1 /* Main.storyboard */,
 				DC82767B22B1A8AD0080AEB1 /* ViewControllers */,
+				16C7B31A22B2A66200E65CA7 /* CustomUI */,
 			);
 			path = LittyGameProject;
 			sourceTree = "<group>";
@@ -82,7 +83,6 @@
 				DC82766B22B179980080AEB1 /* Assets.xcassets */,
 				DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */,
 				DC82767022B179980080AEB1 /* Info.plist */,
-
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */,
+				16C7B31922B2A65300E65CA7 /* StyleGuide.swift in Sources */,
 				DC82767A22B1A8A90080AEB1 /* SettingsViewController.swift in Sources */,
+				16C7B31C22B2A75100E65CA7 /* MonteButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

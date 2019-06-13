@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var buttonOneImageView: UIButton!
     @IBOutlet weak var queenImageView: UIButton!
     @IBOutlet weak var buttonThreeImageView: UIButton!
+    @IBOutlet weak var gameStatusTextLabel: UILabel!
     
     
     var slotOne: CGPoint = .zero
@@ -42,7 +43,7 @@ class GameViewController: UIViewController {
         print("I ran")
     }
     
-    @IBAction func cardButtonTapped(_ sender: UIButton) {
+    @IBAction func cardButtonTapped(_ sender: UIButton ) {
         print(cardAnimationComplete)
         if cardAnimationComplete {
             switch sender {
@@ -117,5 +118,4 @@ class GameViewController: UIViewController {
         alertController.addAction(playAgainAction)
         self.present(alertController, animated: true)
     }
-
 }

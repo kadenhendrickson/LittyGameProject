@@ -28,21 +28,34 @@ class GameViewController: UIViewController {
         slotOne = buttonOneImageView.frame.origin
         slotTwo = queenImageView.frame.origin
         slotThree = buttonThreeImageView.frame.origin
+        
         buttonOneImageView.isEnabled = false
         queenImageView.isEnabled = false
         buttonThreeImageView.isEnabled = false
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
+        buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        
+        
+    }
+    
     
     @IBAction func moveCardsButtonTapped(_ sender: Any) {
         cardAnimationComplete = false
         numberOfShuffles = 10
-        animateCardFlipToBack()
+        
+        let shuffleSpeed = SettingsViewController.shared.shuffleSpeed
+        let cardBack = SettingsViewController.shared.cardBackColor
+        setCardBackColor(cardBack: cardBack)
+        animateCardFlipToBack(cardBack: cardBack)
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-            self.animateCardShuffle(animationSpeed: 0.5)
+            self.setDifficulty(shuffleSpeed: shuffleSpeed)
         }
         print("I ran")
     }
@@ -70,8 +83,6 @@ class GameViewController: UIViewController {
                 print("How on earth did you find a fourth card?")
             }
         }
-        
-        
     }
     
     func animateCardShuffle(animationSpeed: TimeInterval) {
@@ -95,10 +106,11 @@ class GameViewController: UIViewController {
             }
         })
     }
-    func animateCardFlipToBack() {
-        self.buttonOneImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
-        self.queenImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
-        self.buttonThreeImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
+    func animateCardFlipToBack(cardBack: UIImage) {
+        self.buttonOneImageView.setImage(cardBack, for: .normal)
+        self.queenImageView.setImage(cardBack, for: .normal)
+        self.buttonThreeImageView.setImage(cardBack
+            , for: .normal)
         
     }
     
@@ -129,5 +141,13 @@ class GameViewController: UIViewController {
         slotOne = buttonOneImageView.frame.origin
         slotTwo = queenImageView.frame.origin
         slotThree = buttonThreeImageView.frame.origin
-}
+    }
+    func setCardBackColor(cardBack: UIImage) {
+        buttonOneImageView.setImage(cardBack, for: .normal)
+        queenImageView.setImage(cardBack, for: .normal)
+        buttonThreeImageView.setImage(cardBack, for: .normal)
+    }
+    func setDifficulty(shuffleSpeed: TimeInterval) {
+        self.animateCardShuffle(animationSpeed: shuffleSpeed)
+    }
 }

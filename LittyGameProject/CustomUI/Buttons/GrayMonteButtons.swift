@@ -1,5 +1,5 @@
 //
-//  MonteButtons.swift
+//  GrayMonteButtons.swift
 //  LittyGameProject
 //
 //  Created by Jordan Hendrickson on 6/13/19.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MonteButtons: UIButton {
-    
+class GrayMonteButtons: UIButton {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
@@ -17,5 +17,7 @@ class MonteButtons: UIButton {
     
     func setupUI(){
         self.addCornerRadius()
+        self.addGrayButtonBorderColor()
+        self.backgroundColor = .grayBackGroundColor
     }
 }

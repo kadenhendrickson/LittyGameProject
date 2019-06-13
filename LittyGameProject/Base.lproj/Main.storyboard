@@ -84,20 +84,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6q-rX-zss" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                <rect key="frame" x="160" y="719" width="94" height="35"/>
+                                <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40594640544041449" green="0.067919358112228406" blue="0.028585574942095009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="xxH-z0-GfL" secondAttribute="trailing" constant="40" id="0u6-tZ-pal"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="DkT-01-vcJ" secondAttribute="trailing" constant="80" id="3Pj-YZ-T4f"/>
+                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="r6q-rX-zss" secondAttribute="bottom" constant="126" id="6bC-di-e0O"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="9Xc-Dd-9fJ"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="bottom" constant="-700" id="EHL-iB-e3M"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="ZTk-fM-Akp" secondAttribute="trailing" constant="30" id="Ebh-vt-jF5"/>
                             <constraint firstItem="hXS-Wo-qvB" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="25" id="FNx-LU-N08"/>
+                            <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="r6q-rX-zss" secondAttribute="trailing" constant="160" id="HWc-bJ-jqN"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="w9F-DD-gHf" secondAttribute="bottom" constant="-652" id="Juo-We-jZY"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="centerY" secondItem="dIY-Ps-pk8" secondAttribute="centerY" id="KY9-2s-JWw"/>
                             <constraint firstItem="DkT-01-vcJ" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="MVj-mu-W1a"/>
                             <constraint firstItem="jrL-nT-iCi" firstAttribute="trailing" secondItem="dIY-Ps-pk8" secondAttribute="trailing" id="QPD-JW-gcn"/>
                             <constraint firstItem="xxH-z0-GfL" firstAttribute="top" secondItem="ZTk-fM-Akp" secondAttribute="top" constant="70" id="RX0-kJ-5qM"/>
+                            <constraint firstItem="r6q-rX-zss" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="160" id="TnS-KV-CWC"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="DkT-01-vcJ" secondAttribute="bottom" constant="180" id="U7S-4p-eQ1"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="300" id="VNp-BX-1w0"/>
                             <constraint firstItem="xxH-z0-GfL" firstAttribute="leading" secondItem="ZTk-fM-Akp" secondAttribute="leading" constant="10" id="Y3N-QF-9sp"/>

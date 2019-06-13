@@ -139,7 +139,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-uf-Bib" customClass="SettingsStackViewColor" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="69" y="139" width="276" height="182.5"/>
+                                <rect key="frame" x="69" y="139" width="276" height="232.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Card Color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaJ-0Z-fWc" customClass="SettingsLabels" customModule="LittyGameProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="32.5"/>
@@ -175,6 +175,13 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-Ov-Enp" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="202.5" width="276" height="30"/>
+                                        <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Red Cards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>

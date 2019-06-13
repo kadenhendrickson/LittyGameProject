@@ -22,6 +22,7 @@ class GameViewController: UIViewController {
     var numberOfShuffles = 0
     var cardAnimationComplete: Bool  = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         slotOne = buttonOneImageView.frame.origin
@@ -39,7 +40,10 @@ class GameViewController: UIViewController {
     @IBAction func moveCardsButtonTapped(_ sender: Any) {
         cardAnimationComplete = false
         numberOfShuffles = 10
-        animateCards(animationSpeed: 0.25)
+        animateCardFlipToBack()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+            self.animateCardShuffle(animationSpeed: 0.5)
+        }
         print("I ran")
     }
     
@@ -51,17 +55,17 @@ class GameViewController: UIViewController {
                 disableButtons()
                 print("You tapped the first card: You lose!")
                 gameStatusTextLabel.text = "You Lost! Play again!"
-                presentAlertController()
+                buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
             case queenImageView:
                 disableButtons()
                 print("You tapped the queen card: You Win!")
                 gameStatusTextLabel.text = "You Won! Play again!"
-                presentAlertController()
+                queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
             case buttonThreeImageView:
                 disableButtons()
                 print("You tapped the third card: You lose!")
                 gameStatusTextLabel.text = "You Lost! Play again!"
-                presentAlertController()
+                buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
             default:
                 print("How on earth did you find a fourth card?")
             }
@@ -70,7 +74,7 @@ class GameViewController: UIViewController {
         
     }
     
-    func animateCards(animationSpeed: TimeInterval) {
+    func animateCardShuffle(animationSpeed: TimeInterval) {
         disableButtons()
         var slots = [slotOne, slotTwo, slotThree].shuffled()
         
@@ -83,13 +87,32 @@ class GameViewController: UIViewController {
         }, completion: { (_) in
             if self.numberOfShuffles > 0 {
                 self.numberOfShuffles -= 1
-                self.animateCards(animationSpeed: animationSpeed)
+                self.animateCardShuffle(animationSpeed: animationSpeed)
                 print("animated \(self.numberOfShuffles) times")
             } else {
                 self.enableButtons()
                 self.cardAnimationComplete = true
             }
         })
+    }
+    func animateCardFlipToBack() {
+        self.buttonOneImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
+        self.queenImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
+        self.buttonThreeImageView.setImage(UIImage(named: "redCardBack"), for: .normal)
+        
+    }
+    
+    func animateCardFlipToFront(card: UIButton) {
+        switch card{
+        case buttonOneImageView:
+            buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        case buttonThreeImageView:
+            self.buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        case queenImageView:
+            self.queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
+        default:
+            print("what")
+        }
     }
     
     func disableButtons() {
@@ -106,16 +129,5 @@ class GameViewController: UIViewController {
         slotOne = buttonOneImageView.frame.origin
         slotTwo = queenImageView.frame.origin
         slotThree = buttonThreeImageView.frame.origin
-    }
-    func presentAlertController() {
-        let alertController = UIAlertController(title: "Play again?", message: "come on man, you know you wanna play again", preferredStyle: .alert)
-        let playAgainAction = UIAlertAction(title: "Reset Cards", style: .default) { (_) in
-            self.buttonOneImageView.frame.origin = self.slotOne
-            self.queenImageView.frame.origin = self.slotTwo
-            self.buttonThreeImageView.frame.origin = self.slotThree
-        }
-        
-        alertController.addAction(playAgainAction)
-        self.present(alertController, animated: true)
-    }
+}
 }

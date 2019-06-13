@@ -14,6 +14,7 @@
 		16C7B32822B2B30C00E65CA7 /* YellowMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */; };
 		16C7B32A22B2B35F00E65CA7 /* GrayMonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */; };
 		16C7B33122B2B96600E65CA7 /* SettingsLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */; };
+		DC0768AB22B2CEC700F1244F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82767722B1A89D0080AEB1 /* GameViewController.swift */; };
 		DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766422B179970080AEB1 /* AppDelegate.swift */; };
 		DC82766A22B179970080AEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766822B179970080AEB1 /* Main.storyboard */; };
 		DC82766C22B179980080AEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC82766B22B179980080AEB1 /* Assets.xcassets */; };
@@ -206,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0768AB22B2CEC700F1244F /* GameViewController.swift in Sources */,
 				16C7B32822B2B30C00E65CA7 /* YellowMonteButton.swift in Sources */,
 				16C7B32222B2B09D00E65CA7 /* RedMonteButtons.swift in Sources */,
 				16C7B32422B2B2D000E65CA7 /* BlueMonteButton.swift in Sources */,

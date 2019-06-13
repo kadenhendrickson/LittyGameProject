@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="VVo-bG-oE8">
             <objects>
-                <viewController id="8sj-zh-lQl" sceneMemberID="viewController">
+                <viewController id="8sj-zh-lQl" customClass="GameViewController" customModule="LittyGameProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9F-DD-gHf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,17 +21,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
                                 <rect key="frame" x="30" y="344" width="354" height="218"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM" customClass="CardButtons" customModule="LittyGameProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
                                 <rect key="frame" x="300" y="414" width="74" height="108"/>
                                 <state key="normal" title="Button" image="queenOfHearts"/>
+                                <connections>
+                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi" customClass="CardButtons" customModule="LittyGameProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
                                 <rect key="frame" x="170" y="414" width="74" height="108"/>
                                 <state key="normal" title="Button" image="queenOfSpades"/>
+                                <connections>
+                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur" customClass="CardButtons" customModule="LittyGameProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
                                 <rect key="frame" x="40" y="414" width="74" height="108"/>
                                 <state key="normal" title="Button" image="queenOfHearts"/>
+                                <connections>
+                                    <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-01-vcJ" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                 <rect key="frame" x="80" y="602" width="254" height="80"/>
@@ -40,6 +49,9 @@
                                 <state key="normal" title="Shuffle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveCardsButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="CtX-Px-Mec"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE'S THE QUEEN?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCX-fZ-Ce5">
                                 <rect key="frame" x="77.5" y="244" width="259" height="30"/>
@@ -98,6 +110,12 @@
                         <viewLayoutGuide key="safeArea" id="dIY-Ps-pk8"/>
                     </view>
                     <navigationItem key="navigationItem" id="mhp-oo-alp"/>
+                    <connections>
+                        <outlet property="buttonOneImageView" destination="yZ0-kG-Pur" id="zlz-iM-hAM"/>
+                        <outlet property="buttonThreeImageView" destination="OzQ-zy-2fM" id="rPI-9b-gjC"/>
+                        <outlet property="gameStatusTextLabel" destination="kCX-fZ-Ce5" id="EEL-J7-dts"/>
+                        <outlet property="queenImageView" destination="qJK-dN-APi" id="Dfy-hr-IvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQc-A1-Vth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

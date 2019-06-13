@@ -37,6 +37,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C7B31722B1A72800E65CA7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DC82766422B179970080AEB1 /* AppDelegate.swift */,
+				DC82766B22B179980080AEB1 /* Assets.xcassets */,
+				DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */,
+				DC82767022B179980080AEB1 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		DC82765822B179960080AEB1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +67,7 @@
 		DC82766322B179970080AEB1 /* LittyGameProject */ = {
 			isa = PBXGroup;
 			children = (
+
 				DC82767622B1A68C0080AEB1 /* Resources */,
 				DC82766822B179970080AEB1 /* Main.storyboard */,
 				DC82767B22B1A8AD0080AEB1 /* ViewControllers */,
@@ -70,6 +82,7 @@
 				DC82766B22B179980080AEB1 /* Assets.xcassets */,
 				DC82766D22B179980080AEB1 /* LaunchScreen.storyboard */,
 				DC82767022B179980080AEB1 /* Info.plist */,
+
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -154,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC82767822B1A89D0080AEB1 /* GameViewController.swift in Sources */,
+
 				DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */,
 				DC82767A22B1A8A90080AEB1 /* SettingsViewController.swift in Sources */,
 			);

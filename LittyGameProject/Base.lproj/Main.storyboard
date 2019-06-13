@@ -7,5 +7,5 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
     </dependencies>
-    <scenes/>
+
 </document>

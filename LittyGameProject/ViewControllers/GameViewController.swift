@@ -85,6 +85,19 @@ class GameViewController: UIViewController {
         }
     }
     
+    @IBAction func resetGameButtonTapped(_ sender: Any) {
+        buttonOneImageView.frame.origin = slotOne
+        queenImageView.frame.origin = slotTwo
+        buttonThreeImageView.frame.origin = slotThree
+        
+        buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
+        buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        
+    }
+    
+    
+    
     func animateCardShuffle(animationSpeed: TimeInterval) {
         disableButtons()
         var slots = [slotOne, slotTwo, slotThree].shuffled()
@@ -150,4 +163,5 @@ class GameViewController: UIViewController {
     func setDifficulty(shuffleSpeed: TimeInterval) {
         self.animateCardShuffle(animationSpeed: shuffleSpeed)
     }
+    
 }

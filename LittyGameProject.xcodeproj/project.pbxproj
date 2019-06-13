@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		16C7B31922B2A65300E65CA7 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B31822B2A65300E65CA7 /* StyleGuide.swift */; };
-		16C7B31C22B2A75100E65CA7 /* MonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */; };
+		16C7B32222B2B09D00E65CA7 /* RedMonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32122B2B09D00E65CA7 /* RedMonteButtons.swift */; };
+		16C7B32422B2B2D000E65CA7 /* BlueMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32322B2B2D000E65CA7 /* BlueMonteButton.swift */; };
+		16C7B32622B2B2EF00E65CA7 /* GreenMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32522B2B2EF00E65CA7 /* GreenMonteButton.swift */; };
+		16C7B32822B2B30C00E65CA7 /* YellowMonteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */; };
+		16C7B32A22B2B35F00E65CA7 /* GrayMonteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */; };
+		16C7B32D22B2B5F600E65CA7 /* SettingsStackViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */; };
+		16C7B33122B2B96600E65CA7 /* SettingsLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */; };
 		DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82766422B179970080AEB1 /* AppDelegate.swift */; };
 		DC82766A22B179970080AEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82766822B179970080AEB1 /* Main.storyboard */; };
 		DC82766C22B179980080AEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC82766B22B179980080AEB1 /* Assets.xcassets */; };
@@ -18,7 +24,13 @@
 
 /* Begin PBXFileReference section */
 		16C7B31822B2A65300E65CA7 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
-		16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteButtons.swift; sourceTree = "<group>"; };
+		16C7B32122B2B09D00E65CA7 /* RedMonteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedMonteButtons.swift; sourceTree = "<group>"; };
+		16C7B32322B2B2D000E65CA7 /* BlueMonteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueMonteButton.swift; sourceTree = "<group>"; };
+		16C7B32522B2B2EF00E65CA7 /* GreenMonteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMonteButton.swift; sourceTree = "<group>"; };
+		16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowMonteButton.swift; sourceTree = "<group>"; };
+		16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayMonteButtons.swift; sourceTree = "<group>"; };
+		16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStackViewColor.swift; sourceTree = "<group>"; };
+		16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabels.swift; sourceTree = "<group>"; };
 		DC82766122B179970080AEB1 /* LittyGameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittyGameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC82766422B179970080AEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC82766922B179970080AEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,10 +55,40 @@
 		16C7B31A22B2A66200E65CA7 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				16C7B32F22B2B93A00E65CA7 /* Labels */,
+				16C7B32E22B2B92F00E65CA7 /* StackView */,
 				16C7B31822B2A65300E65CA7 /* StyleGuide.swift */,
-				16C7B31B22B2A75100E65CA7 /* MonteButtons.swift */,
+				16C7B32B22B2B5A700E65CA7 /* Buttons */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		16C7B32B22B2B5A700E65CA7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				16C7B32122B2B09D00E65CA7 /* RedMonteButtons.swift */,
+				16C7B32322B2B2D000E65CA7 /* BlueMonteButton.swift */,
+				16C7B32522B2B2EF00E65CA7 /* GreenMonteButton.swift */,
+				16C7B32722B2B30C00E65CA7 /* YellowMonteButton.swift */,
+				16C7B32922B2B35F00E65CA7 /* GrayMonteButtons.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		16C7B32E22B2B92F00E65CA7 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				16C7B32C22B2B5F600E65CA7 /* SettingsStackViewColor.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		16C7B32F22B2B93A00E65CA7 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				16C7B33022B2B96600E65CA7 /* SettingsLabels.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		DC82765822B179960080AEB1 = {
@@ -167,10 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C7B32822B2B30C00E65CA7 /* YellowMonteButton.swift in Sources */,
+				16C7B32222B2B09D00E65CA7 /* RedMonteButtons.swift in Sources */,
+				16C7B32422B2B2D000E65CA7 /* BlueMonteButton.swift in Sources */,
 				DC82766522B179970080AEB1 /* AppDelegate.swift in Sources */,
 				16C7B31922B2A65300E65CA7 /* StyleGuide.swift in Sources */,
 				DC82767A22B1A8A90080AEB1 /* SettingsViewController.swift in Sources */,
-				16C7B31C22B2A75100E65CA7 /* MonteButtons.swift in Sources */,
+				16C7B32D22B2B5F600E65CA7 /* SettingsStackViewColor.swift in Sources */,
+				16C7B32A22B2B35F00E65CA7 /* GrayMonteButtons.swift in Sources */,
+				16C7B32622B2B2EF00E65CA7 /* GreenMonteButton.swift in Sources */,
+				16C7B33122B2B96600E65CA7 /* SettingsLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

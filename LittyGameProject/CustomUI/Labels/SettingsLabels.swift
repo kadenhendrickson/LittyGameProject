@@ -16,7 +16,7 @@ class SettingsLabels: UILabel {
     }
     
     func setupUI(){
-        self.addGrayButtonBorderColor()
+        self.addRedButtonBorderColor()
     }
 
 }

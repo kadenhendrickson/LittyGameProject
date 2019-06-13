@@ -18,28 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
-                                <rect key="frame" x="30" y="344" width="354" height="218"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFabric" translatesAutoresizingMaskIntoConstraints="NO" id="jrL-nT-iCi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="914"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
+                                <rect key="frame" x="30" y="344" width="354" height="236"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-z0-GfL">
-                                <rect key="frame" x="40" y="414" width="334" height="108"/>
+                                <rect key="frame" x="40" y="414" width="334" height="126"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
-                                        <rect key="frame" x="130" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="130" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfSpades"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
-                                        <rect key="frame" x="260" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="260" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
@@ -48,8 +51,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-01-vcJ" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="80" y="602" width="254" height="80"/>
-                                <color key="backgroundColor" red="0.51882286269430056" green="0.086804847477133323" blue="0.036534009476275789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="80" y="620" width="254" height="80"/>
+                                <color key="backgroundColor" red="0.77998096446700504" green="0.21271145160583751" blue="0.13215954230618365" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
                                 <state key="normal" title="Shuffle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,14 +62,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE'S THE QUEEN?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCX-fZ-Ce5">
-                                <rect key="frame" x="77.5" y="244" width="259" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="46.5" y="244" width="321.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-Wo-qvB" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                 <rect key="frame" x="300" y="69" width="84" height="33"/>
-                                <color key="backgroundColor" red="0.5188228627" green="0.086804847480000003" blue="0.036534009479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +79,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick A Card" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgW-YT-cKK">
-                                <rect key="frame" x="150.5" y="299" width="113.5" height="20"/>
+                                <rect key="frame" x="150.5" y="305" width="113.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -87,19 +90,25 @@
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="xxH-z0-GfL" secondAttribute="trailing" constant="40" id="0u6-tZ-pal"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="DkT-01-vcJ" secondAttribute="trailing" constant="80" id="3Pj-YZ-T4f"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="9Xc-Dd-9fJ"/>
+                            <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="bottom" constant="-700" id="EHL-iB-e3M"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="ZTk-fM-Akp" secondAttribute="trailing" constant="30" id="Ebh-vt-jF5"/>
                             <constraint firstItem="hXS-Wo-qvB" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="25" id="FNx-LU-N08"/>
+                            <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="w9F-DD-gHf" secondAttribute="bottom" constant="-652" id="Juo-We-jZY"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="centerY" secondItem="dIY-Ps-pk8" secondAttribute="centerY" id="KY9-2s-JWw"/>
                             <constraint firstItem="DkT-01-vcJ" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="MVj-mu-W1a"/>
+                            <constraint firstItem="jrL-nT-iCi" firstAttribute="trailing" secondItem="dIY-Ps-pk8" secondAttribute="trailing" id="QPD-JW-gcn"/>
                             <constraint firstItem="xxH-z0-GfL" firstAttribute="top" secondItem="ZTk-fM-Akp" secondAttribute="top" constant="70" id="RX0-kJ-5qM"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="bottom" secondItem="DkT-01-vcJ" secondAttribute="bottom" constant="180" id="U7S-4p-eQ1"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="300" id="VNp-BX-1w0"/>
                             <constraint firstItem="xxH-z0-GfL" firstAttribute="leading" secondItem="ZTk-fM-Akp" secondAttribute="leading" constant="10" id="Y3N-QF-9sp"/>
                             <constraint firstItem="xgW-YT-cKK" firstAttribute="top" secondItem="kCX-fZ-Ce5" secondAttribute="bottom" constant="25" id="aDq-17-Qzt"/>
+                            <constraint firstAttribute="bottom" secondItem="jrL-nT-iCi" secondAttribute="bottom" id="aPK-Df-g7f"/>
                             <constraint firstItem="xgW-YT-cKK" firstAttribute="centerX" secondItem="dIY-Ps-pk8" secondAttribute="centerX" id="idA-Tw-0CS"/>
+                            <constraint firstItem="jrL-nT-iCi" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" id="jbz-K8-er2"/>
                             <constraint firstItem="DkT-01-vcJ" firstAttribute="top" secondItem="ZTk-fM-Akp" secondAttribute="bottom" constant="40" id="lfY-H9-rfA"/>
                             <constraint firstItem="kCX-fZ-Ce5" firstAttribute="top" secondItem="dIY-Ps-pk8" secondAttribute="top" constant="200" id="ltu-ve-ozY"/>
                             <constraint firstItem="hXS-Wo-qvB" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="300" id="tut-Zf-1aL"/>
+                            <constraint firstItem="jrL-nT-iCi" firstAttribute="top" secondItem="w9F-DD-gHf" secondAttribute="top" id="uRo-oD-eSc"/>
                             <constraint firstItem="dIY-Ps-pk8" firstAttribute="trailing" secondItem="hXS-Wo-qvB" secondAttribute="trailing" constant="30" id="vvP-uu-uNP"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="bottom" secondItem="xxH-z0-GfL" secondAttribute="bottom" constant="40" id="vze-8W-sqO"/>
                             <constraint firstItem="ZTk-fM-Akp" firstAttribute="leading" secondItem="dIY-Ps-pk8" secondAttribute="leading" constant="30" id="zc3-tW-WEr"/>
@@ -126,12 +135,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFabric" translatesAutoresizingMaskIntoConstraints="NO" id="4AI-au-FUP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-uf-Bib" customClass="SettingsStackViewColor" customModule="LittyGameProject" customModuleProvider="target">
                                 <rect key="frame" x="69" y="139" width="276" height="182.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Card Color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaJ-0Z-fWc" customClass="SettingsLabels" customModule="LittyGameProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="32.5"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -171,7 +183,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Difficulty" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-dG-qbo" customClass="SettingsLabels" customModule="LittyGameProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="32.5"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -216,7 +228,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgq-0c-P5f" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                 <rect key="frame" x="25" y="74" width="89" height="30"/>
-                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -224,13 +236,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Nk3-LG-Yd2" firstAttribute="trailing" secondItem="4AI-au-FUP" secondAttribute="trailing" id="1Hd-Tm-E0Y"/>
                             <constraint firstItem="kCP-uf-Bib" firstAttribute="centerX" secondItem="Nk3-LG-Yd2" secondAttribute="centerX" id="2wQ-2v-zEN"/>
                             <constraint firstItem="N2Y-el-KRP" firstAttribute="centerX" secondItem="Nk3-LG-Yd2" secondAttribute="centerX" id="Cdi-Qu-yxv"/>
                             <constraint firstItem="Nk3-LG-Yd2" firstAttribute="trailing" secondItem="Vgq-0c-P5f" secondAttribute="trailing" constant="300" id="Ed3-Rp-YdB"/>
                             <constraint firstItem="kCP-uf-Bib" firstAttribute="top" secondItem="Nk3-LG-Yd2" secondAttribute="top" constant="95" id="EwL-W0-lVx"/>
                             <constraint firstItem="Vgq-0c-P5f" firstAttribute="leading" secondItem="Nk3-LG-Yd2" secondAttribute="leading" constant="25" id="GHs-HL-4c3"/>
+                            <constraint firstAttribute="bottom" secondItem="4AI-au-FUP" secondAttribute="bottom" id="OSS-Ex-uWH"/>
+                            <constraint firstItem="4AI-au-FUP" firstAttribute="leading" secondItem="Nk3-LG-Yd2" secondAttribute="leading" id="Uf0-gf-p2Q"/>
                             <constraint firstItem="Nk3-LG-Yd2" firstAttribute="trailing" secondItem="N2Y-el-KRP" secondAttribute="trailing" constant="69" id="e4P-Ae-Oe7"/>
                             <constraint firstItem="Nk3-LG-Yd2" firstAttribute="trailing" secondItem="kCP-uf-Bib" secondAttribute="trailing" constant="69" id="kQf-BI-tdg"/>
+                            <constraint firstItem="4AI-au-FUP" firstAttribute="top" secondItem="6a1-yg-Q63" secondAttribute="top" id="ncp-2u-nXT"/>
                             <constraint firstItem="Nk3-LG-Yd2" firstAttribute="bottom" secondItem="N2Y-el-KRP" secondAttribute="bottom" constant="95" id="nu4-ZN-68o"/>
                             <constraint firstItem="Vgq-0c-P5f" firstAttribute="top" secondItem="Nk3-LG-Yd2" secondAttribute="top" constant="30" id="oyX-vC-9Je"/>
                         </constraints>
@@ -239,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9J-Tl-kHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="192"/>
+            <point key="canvasLocation" x="2013.0434782608697" y="191.51785714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G8S-BP-YXd">
@@ -264,5 +280,6 @@
         <image name="oakTable" width="169" height="74.5"/>
         <image name="queenOfHearts" width="90" height="126"/>
         <image name="queenOfSpades" width="85" height="119"/>
+        <image name="redFabric" width="200" height="200"/>
     </resources>
 </document>

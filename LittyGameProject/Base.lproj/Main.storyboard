@@ -88,9 +88,12 @@
                                 <rect key="frame" x="160" y="719" width="94" height="35"/>
                                 <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Reset">
+                                <state key="normal" title="Play Again">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGameButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Vv0-ht-OL5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40594640544041449" green="0.067919358112228406" blue="0.028585574942095009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

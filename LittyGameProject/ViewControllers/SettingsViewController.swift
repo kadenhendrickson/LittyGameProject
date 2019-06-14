@@ -18,6 +18,14 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var blueCardButton: BlueMonteButton!
     @IBOutlet weak var greenCardButton: GreenMonteButton!
     @IBOutlet weak var yellowCardButton: YellowMonteButton!
+    @IBOutlet weak var redCardButton: RedMonteButtons!
+    
+    @IBOutlet weak var easyButton: GrayMonteButtons!
+    @IBOutlet weak var mediumButton: GrayMonteButtons!
+    @IBOutlet weak var hardButton: GrayMonteButtons!
+    @IBOutlet weak var insaneButton: GrayMonteButtons!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,16 +39,28 @@ class SettingsViewController: UIViewController {
         switch sender.tag {
         case 1:
             SettingsViewController.shared.cardBackColor = UIImage(named: "blueCardBack") ?? UIImage()
-            self.navigationController?.popViewController(animated: true)
+            setColorButtonAlphaToBase()
+            blueCardButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
             print("card color changed to blue")
         case 2:
             SettingsViewController.shared.cardBackColor = UIImage(named: "greenCardBack") ?? UIImage()
-            self.navigationController?.popViewController(animated: true)
+            setColorButtonAlphaToBase()
+            greenCardButton.alpha = 1.0
+           // self.navigationController?.popViewController(animated: true)
             print("card color changed to green")
         case 3:
             SettingsViewController.shared.cardBackColor = UIImage(named: "yellowCardBack") ?? UIImage()
-            self.navigationController?.popViewController(animated: true)
+            setColorButtonAlphaToBase()
+            yellowCardButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
             print("card color changed to yellow")
+        case 4:
+            SettingsViewController.shared.cardBackColor = UIImage(named: "redCardBack") ?? UIImage()
+            setColorButtonAlphaToBase()
+            redCardButton.alpha = 1.0
+           // self.navigationController?.popViewController(animated: true)
+            print("card color changed to red")
         default:
             print("damn brother impressive")
         }
@@ -50,20 +70,41 @@ class SettingsViewController: UIViewController {
         switch sender.tag {
         case 1:
             SettingsViewController.shared.shuffleSpeed = 1.0
-            self.navigationController?.popViewController(animated: true)
+            setDifficultyAlphaToBase()
+            easyButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
         case 2:
             SettingsViewController.shared.shuffleSpeed = 0.75
-            self.navigationController?.popViewController(animated: true)
+            setDifficultyAlphaToBase()
+            mediumButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
         case 3:
             SettingsViewController.shared.shuffleSpeed = 0.5
-            self.navigationController?.popViewController(animated: true)
+            setDifficultyAlphaToBase()
+            hardButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
         case 4:
             SettingsViewController.shared.shuffleSpeed = 0.25
-            self.navigationController?.popViewController(animated: true)
+            setDifficultyAlphaToBase()
+            insaneButton.alpha = 1.0
+            //self.navigationController?.popViewController(animated: true)
         default:
             print("this is broken if it hits this point")
         }
     }
     
+    func setColorButtonAlphaToBase() {
+        blueCardButton.alpha = 0.7
+        greenCardButton.alpha = 0.7
+        yellowCardButton.alpha = 0.7
+        redCardButton.alpha = 0.7
+    }
+    
+    func setDifficultyAlphaToBase() {
+        easyButton.alpha = 0.7
+        mediumButton.alpha = 0.7
+        hardButton.alpha = 0.7
+        insaneButton.alpha = 0.7
+    }
 
 }

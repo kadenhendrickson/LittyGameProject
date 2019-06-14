@@ -13,6 +13,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var buttonOneImageView: UIButton!
     @IBOutlet weak var queenImageView: UIButton!
     @IBOutlet weak var buttonThreeImageView: UIButton!
+    @IBOutlet weak var shuffleButton: RedMonteButtons!
+    @IBOutlet weak var playAgainButton: RedMonteButtons!
+
     @IBOutlet weak var gameStatusTextLabel: UILabel!
     
     
@@ -25,28 +28,50 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         slotOne = buttonOneImageView.frame.origin
         slotTwo = queenImageView.frame.origin
         slotThree = buttonThreeImageView.frame.origin
+        
+        buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
+        buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
         
         buttonOneImageView.isEnabled = false
         queenImageView.isEnabled = false
         buttonThreeImageView.isEnabled = false
         
+        playAgainButton.isEnabled = false
+        shuffleButton.isEnabled = true
+    }
+    
+    fileprivate func viewSetUp() {
+         buttonOneImageView.frame.origin = slotOne
+        queenImageView.frame.origin = slotTwo
+        buttonThreeImageView.frame.origin = slotThree  
         
+        buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
+        buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        
+        buttonOneImageView.isEnabled = false
+        queenImageView.isEnabled = false
+        buttonThreeImageView.isEnabled = false
+        
+        playAgainButton.isEnabled = false
+        shuffleButton.isEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        buttonOneImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
-        queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
-        buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
+        viewSetUp()
         
         
     }
     
     
     @IBAction func moveCardsButtonTapped(_ sender: Any) {
+        shuffleButton.isEnabled = false
         cardAnimationComplete = false
         numberOfShuffles = 10
         
@@ -83,6 +108,8 @@ class GameViewController: UIViewController {
                 print("How on earth did you find a fourth card?")
             }
         }
+         self.playAgainButton.isEnabled = true
+        
     }
     
     @IBAction func resetGameButtonTapped(_ sender: Any) {
@@ -94,9 +121,10 @@ class GameViewController: UIViewController {
         queenImageView.setImage(UIImage(named: "queenOfSpades"), for: .normal)
         buttonThreeImageView.setImage(UIImage(named: "queenOfHearts"), for: .normal)
         
+        shuffleButton.isEnabled = true
+        playAgainButton.isEnabled = false
+        
     }
-    
-    
     
     func animateCardShuffle(animationSpeed: TimeInterval) {
         disableButtons()
@@ -116,6 +144,7 @@ class GameViewController: UIViewController {
             } else {
                 self.enableButtons()
                 self.cardAnimationComplete = true
+               
             }
         })
     }

@@ -19,30 +19,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFabric" translatesAutoresizingMaskIntoConstraints="NO" id="jrL-nT-iCi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="914"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
-                                <rect key="frame" x="30" y="344" width="354" height="218"/>
+                                <rect key="frame" x="30" y="344" width="354" height="236"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-z0-GfL">
-                                <rect key="frame" x="40" y="414" width="334" height="108"/>
+                                <rect key="frame" x="40" y="414" width="334" height="126"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
-                                        <rect key="frame" x="130" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="130" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfSpades"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
-                                        <rect key="frame" x="260" y="0.0" width="74" height="108"/>
+                                        <rect key="frame" x="260" y="0.0" width="74" height="126"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
@@ -51,7 +51,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-01-vcJ" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="80" y="602" width="254" height="80"/>
+                                <rect key="frame" x="80" y="620" width="254" height="80"/>
                                 <color key="backgroundColor" red="0.77998096446700504" green="0.21271145160583751" blue="0.13215954230618365" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
                                 <state key="normal" title="Shuffle">
@@ -85,9 +85,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6q-rX-zss" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="160" y="701" width="94" height="35"/>
+                                <rect key="frame" x="160" y="721" width="94" height="33"/>
                                 <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -134,7 +134,9 @@
                         <outlet property="buttonOneImageView" destination="yZ0-kG-Pur" id="zlz-iM-hAM"/>
                         <outlet property="buttonThreeImageView" destination="OzQ-zy-2fM" id="rPI-9b-gjC"/>
                         <outlet property="gameStatusTextLabel" destination="kCX-fZ-Ce5" id="EEL-J7-dts"/>
+                        <outlet property="playAgainButton" destination="r6q-rX-zss" id="QTg-db-vaw"/>
                         <outlet property="queenImageView" destination="qJK-dN-APi" id="Dfy-hr-IvN"/>
+                        <outlet property="shuffleButton" destination="DkT-01-vcJ" id="QrU-Ec-gtV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQc-A1-Vth" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,7 +167,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xs2-OP-1cs">
                                         <rect key="frame" x="0.0" y="52.5" width="276" height="130"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I20-5a-lmC" customClass="BlueMonteButton" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I20-5a-lmC" customClass="BlueMonteButton" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="276" height="30"/>
                                                 <color key="backgroundColor" red="0.02716919147" green="0.3024582489" blue="0.47173935169999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Blue Cards">
@@ -175,7 +177,7 @@
                                                     <action selector="changeColorButtonsTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="7HF-Lk-wDi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpO-Rk-CDw" customClass="GreenMonteButton" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpO-Rk-CDw" customClass="GreenMonteButton" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="276" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.5" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Green Cards">
@@ -185,7 +187,7 @@
                                                     <action selector="changeColorButtonsTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="a1y-7E-sKh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-JL-idb" customClass="YellowMonteButton" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-JL-idb" customClass="YellowMonteButton" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="100" width="276" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.64113021609999998" blue="0.066732112060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Yellow Cards">
@@ -198,12 +200,15 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-Ov-Enp" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                    <button opaque="NO" alpha="0.69999999999999996" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-Ov-Enp" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="202.5" width="276" height="30"/>
                                         <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Red Cards">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeColorButtonsTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="tNU-eE-BBu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -221,7 +226,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pb4-3b-SUV">
                                         <rect key="frame" x="0.0" y="52.5" width="276" height="184"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-1L-2EI" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-1L-2EI" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="276" height="30"/>
                                                 <color key="backgroundColor" red="0.61321380441052931" green="0.61321380441052931" blue="0.61321380441052931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Easy">
@@ -231,7 +236,7 @@
                                                     <action selector="difficultyButtonTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="uQK-hL-SZl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-fi-9rz" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-fi-9rz" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="276" height="30"/>
                                                 <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Medium">
@@ -241,7 +246,7 @@
                                                     <action selector="difficultyButtonTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="GlJ-XT-WkT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUq-kB-Q5p" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUq-kB-Q5p" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="100" width="276" height="30"/>
                                                 <color key="backgroundColor" red="0.28852278627262218" green="0.28852278627262218" blue="0.28852278627262218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Hard">
@@ -251,7 +256,7 @@
                                                     <action selector="difficultyButtonTapped:" destination="QIc-GT-v48" eventType="touchUpInside" id="dYu-jl-A7o"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FJ-2Z-et8" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FJ-2Z-et8" customClass="GrayMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="150" width="276" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
@@ -299,7 +304,12 @@
                     </view>
                     <connections>
                         <outlet property="blueCardButton" destination="I20-5a-lmC" id="YwU-hC-coo"/>
+                        <outlet property="easyButton" destination="Lb1-1L-2EI" id="yvH-WC-24l"/>
                         <outlet property="greenCardButton" destination="RpO-Rk-CDw" id="1Bk-HP-KQn"/>
+                        <outlet property="hardButton" destination="PUq-kB-Q5p" id="Mk8-53-5vX"/>
+                        <outlet property="insaneButton" destination="9FJ-2Z-et8" id="5yn-Ez-R7e"/>
+                        <outlet property="mediumButton" destination="gjl-fi-9rz" id="exJ-1P-m8Z"/>
+                        <outlet property="redCardButton" destination="j0J-Ov-Enp" id="oqA-Mz-Klm"/>
                         <outlet property="yellowCardButton" destination="w9d-JL-idb" id="oWK-yb-idC"/>
                     </connections>
                 </viewController>

@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var playAgainButton: RedMonteButtons!
 
     @IBOutlet weak var gameStatusTextLabel: UILabel!
+    @IBOutlet weak var promptLabel: UILabel!
     
     
     var slotOne: CGPoint = .zero
@@ -29,6 +30,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gameStatusTextLabel.text = "Shuffle those cards!"
+        promptLabel.text = ""
         slotOne = buttonOneImageView.frame.origin
         slotTwo = queenImageView.frame.origin
         slotThree = buttonThreeImageView.frame.origin
@@ -74,7 +77,8 @@ class GameViewController: UIViewController {
         shuffleButton.isEnabled = false
         cardAnimationComplete = false
         numberOfShuffles = 10
-        
+        gameStatusTextLabel?.text = "Shuffling..."
+        promptLabel.text = ""
         let shuffleSpeed = SettingsViewController.shared.shuffleSpeed
         let cardBack = SettingsViewController.shared.cardBackColor
         setCardBackColor(cardBack: cardBack)
@@ -109,6 +113,7 @@ class GameViewController: UIViewController {
             }
         }
          self.playAgainButton.isEnabled = true
+        promptLabel.text = "click the 'play again' button below!"
         
     }
     
@@ -123,6 +128,9 @@ class GameViewController: UIViewController {
         
         shuffleButton.isEnabled = true
         playAgainButton.isEnabled = false
+        
+        gameStatusTextLabel.text = "Shuffle those cards!"
+        promptLabel.text = ""
         
     }
     
@@ -144,6 +152,8 @@ class GameViewController: UIViewController {
             } else {
                 self.enableButtons()
                 self.cardAnimationComplete = true
+                self.gameStatusTextLabel?.text = "pick a card!"
+                
                
             }
         })

@@ -19,30 +19,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFabric" translatesAutoresizingMaskIntoConstraints="NO" id="jrL-nT-iCi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="914"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oakTable" translatesAutoresizingMaskIntoConstraints="NO" id="ZTk-fM-Akp">
-                                <rect key="frame" x="30" y="344" width="354" height="236"/>
+                                <rect key="frame" x="30" y="344" width="354" height="218"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-z0-GfL">
-                                <rect key="frame" x="40" y="414" width="334" height="126"/>
+                                <rect key="frame" x="40" y="414" width="334" height="108"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-kG-Pur">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="108"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="4e3-fo-tEW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-dN-APi">
-                                        <rect key="frame" x="130" y="0.0" width="74" height="126"/>
+                                        <rect key="frame" x="130" y="0.0" width="74" height="108"/>
                                         <state key="normal" title="Button" image="queenOfSpades"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="eVu-LI-sQH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-zy-2fM">
-                                        <rect key="frame" x="260" y="0.0" width="74" height="126"/>
+                                        <rect key="frame" x="260" y="0.0" width="74" height="108"/>
                                         <state key="normal" title="Button" image="queenOfHearts"/>
                                         <connections>
                                             <action selector="cardButtonTapped:" destination="8sj-zh-lQl" eventType="touchUpInside" id="Ub5-rV-e8F"/>
@@ -51,7 +51,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-01-vcJ" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="80" y="620" width="254" height="80"/>
+                                <rect key="frame" x="80" y="602" width="254" height="80"/>
                                 <color key="backgroundColor" red="0.77998096446700504" green="0.21271145160583751" blue="0.13215954230618365" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
                                 <state key="normal" title="Shuffle">
@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6q-rX-zss" customClass="RedMonteButtons" customModule="LittyGameProject" customModuleProvider="target">
-                                <rect key="frame" x="160" y="721" width="94" height="33"/>
+                                <rect key="frame" x="160" y="703" width="94" height="33"/>
                                 <color key="backgroundColor" red="0.77998096449999998" green="0.21271145159999999" blue="0.13215954229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <state key="normal" title="Play Again">
@@ -135,6 +135,7 @@
                         <outlet property="buttonThreeImageView" destination="OzQ-zy-2fM" id="rPI-9b-gjC"/>
                         <outlet property="gameStatusTextLabel" destination="kCX-fZ-Ce5" id="EEL-J7-dts"/>
                         <outlet property="playAgainButton" destination="r6q-rX-zss" id="QTg-db-vaw"/>
+                        <outlet property="promptLabel" destination="xgW-YT-cKK" id="osm-uR-G6b"/>
                         <outlet property="queenImageView" destination="qJK-dN-APi" id="Dfy-hr-IvN"/>
                         <outlet property="shuffleButton" destination="DkT-01-vcJ" id="QrU-Ec-gtV"/>
                     </connections>

@@ -14,6 +14,8 @@ class SettingsViewController: UIViewController {
     
     var cardBackColor: UIImage = UIImage(named: "redCardBack") ?? UIImage()
     var shuffleSpeed: TimeInterval = 0.75
+    var colorSetting: Int = 1
+    var difficultySetting: Int = 1
     
     @IBOutlet weak var blueCardButton: BlueMonteButton!
     @IBOutlet weak var greenCardButton: GreenMonteButton!
@@ -25,10 +27,15 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var hardButton: GrayMonteButtons!
     @IBOutlet weak var insaneButton: GrayMonteButtons!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colorSettingPersist(setting: colorSetting)
+
         
     }
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -41,24 +48,28 @@ class SettingsViewController: UIViewController {
             SettingsViewController.shared.cardBackColor = UIImage(named: "blueCardBack") ?? UIImage()
             setColorButtonAlphaToBase()
             blueCardButton.alpha = 1.0
+            colorSetting = 1
             //self.navigationController?.popViewController(animated: true)
             print("card color changed to blue")
         case 2:
             SettingsViewController.shared.cardBackColor = UIImage(named: "greenCardBack") ?? UIImage()
             setColorButtonAlphaToBase()
             greenCardButton.alpha = 1.0
+            colorSetting = 2
            // self.navigationController?.popViewController(animated: true)
             print("card color changed to green")
         case 3:
             SettingsViewController.shared.cardBackColor = UIImage(named: "yellowCardBack") ?? UIImage()
             setColorButtonAlphaToBase()
             yellowCardButton.alpha = 1.0
+            colorSetting = 3
             //self.navigationController?.popViewController(animated: true)
             print("card color changed to yellow")
         case 4:
             SettingsViewController.shared.cardBackColor = UIImage(named: "redCardBack") ?? UIImage()
             setColorButtonAlphaToBase()
             redCardButton.alpha = 1.0
+            colorSetting = 4
            // self.navigationController?.popViewController(animated: true)
             print("card color changed to red")
         default:
@@ -107,4 +118,21 @@ class SettingsViewController: UIViewController {
         insaneButton.alpha = 0.7
     }
 
+    func colorSettingPersist(setting: Int) {
+        switch setting {
+        case 1:
+            blueCardButton.alpha = 1.0
+        case 2:
+            greenCardButton.alpha = 1.0
+        case 3:
+            yellowCardButton.alpha = 1.0
+        case 4:
+            redCardButton.alpha = 1.0
+        default:
+            print("how the hell did you find another setting bro")
+        }
+    }
+    func difficultySettingPersist(setting: Int) {
+        
+    }
 }
